@@ -7,6 +7,7 @@
   <title>Aim Training | Проект 5</title>
 </head>
 <body>
+
 <div class="screen">
   <h1>Aim Training</h1>
   <a href="#" id="start" class="start">Начать игру</a>
@@ -38,10 +39,15 @@
   </ul>
 </div>
 
+
 <div class="screen">
   <h3>Осталось <span id="time">00:00</span></h3>
-  <div class="board" id="board"></div>
-   <ul class="end-time" id="end-time">
+  <div class="wrapper">
+    <div class="board" id="boardComp">Comp</div>
+    <div class="board" id="board">User</div>
+  </div>
+
+  <ul class="end-time" id="end-time">
     <li>
       <button class="end-btn" id="end-btn">
         Выйти
@@ -49,6 +55,7 @@
     </li>
   </ul>
 </div>
+
 <script src="app.js"></script>
 </body>
 </html>
